@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+   
+  server_web_1:
+    image: marwaney/ssh-server
+    container_name: marwaney1
+    
+  server_web_2:
+    image: marwaney/ssh-server
+    container_name: marwaney2
+    
+        
+  server_web_3:
+    image: marwaney/ssh-server
+    container_name: marwaney3
+      
+  

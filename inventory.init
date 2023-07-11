@@ -1,0 +1,7 @@
+[group_1]
+server_web_1  ansible_host=172.29.0.3 
+
+
+[group_2]
+server_web_ 2 ansible_host=172.29.0.2
+
