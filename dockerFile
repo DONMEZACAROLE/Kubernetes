@@ -1,0 +1,10 @@
+FROM marwaney/ssh-server:latest
+
+COPY cdte.pub  /home/donmeza/.ssh/authorized_keys 
+
+RUN chmod 600 /home/donmeza/.ssh/authorized_keys
+
+RUN apt-get install sudo
+
+
+

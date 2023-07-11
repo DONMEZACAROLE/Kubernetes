@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: carolepod
+  labels:
+    type: sshserver      
+    user: carole      
+spec:
+  containers:
+    - name: marwaney
+      image: marwaney/ssh-server
+       

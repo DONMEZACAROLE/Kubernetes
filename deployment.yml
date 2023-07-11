@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carole-deployment
+  labels:
+    type: deployment
+    owner: estelle
+spec: 
+  template: 
+    metadata: 
+      name: carolepod 
+      labels: 
+        type: ssh-server
+        user: carole
+    spec: 
+      containers: 
+      - name: marwaney
+        image: marwaney/ssh-server
+        ports:
+         - containerPort: 80
+
+  replicas: 3 
+  selector: 
+    matchLabels:
+      type: ssh-bserver      
+
+   
